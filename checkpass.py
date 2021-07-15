@@ -31,8 +31,6 @@ def pwned_api_check(password):
 
 def main(args):
     password = args
-    # for password in args:
-    # print(password)
     count = pwned_api_check(password)
     if count:
         print(f"{password} was found {count} times")
